@@ -42,8 +42,11 @@ int	ft_printf(const char *str, ...)
 	cnt = 0;
 	while (*str != '\0')
 	{
-		if (*str != '%' && cnt++)
+		if (*str != '%')
+		{
+			cnt++;
 			ft_putchar_fd(*str++, 1);
+		}
 		else
 			cnt += check(str++, argList);
 	}
