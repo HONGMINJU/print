@@ -59,9 +59,15 @@ int	print_xX(unsigned int num, int isUpper)
 	if (num >= 16)
 		cnt += print_xX(num / 16, isUpper);
 	if (isUpper)
+	{
+		cnt++;
 		ft_putchar_fd("0123456789ABCDEF"[num % 16], isUpper);
+	}
 	else if (!isUpper)
+	{
+		cnt++;
 		ft_putchar_fd("0123456789abcdef"[num % 16], isUpper);
+	}
 	return (cnt);
 }
 
