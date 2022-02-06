@@ -20,7 +20,7 @@ int	ft_printf(const char *str, ...);
 int	print_p(long long ptr);
 int	print_di(int num);
 int	print_u(unsigned int num);
-int	print_xX(unsigned int ap, int isUpper);
+int	print_xX(unsigned long long num, int isUpper);
 int	print_s(char *str);
 
 #endif
