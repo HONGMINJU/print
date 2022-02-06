@@ -46,13 +46,10 @@ int	ft_printf(const char *str, ...)
 		{
 			ft_putchar_fd(*str, 1);
 			cnt++;
-			str++;
 		}
 		else
-		{
-			str++;
-			cnt += check(*str, argList);
-		}
+			cnt += check(*str++, argList);
+		str++;
 	}
 	return (cnt);
 }
