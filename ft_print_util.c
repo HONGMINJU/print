@@ -20,7 +20,7 @@ int	print_p(long long ptr)
 	temp = ptr;
 	if (ptr < 0)
 		temp = 0llu + ptr;
-	ft_putstr_fd("0x", 0);
+	ft_putstr_fd("0x", 1);
 	cnt = 2;
 	cnt += print_xX(temp, 0);
 	return (cnt);
@@ -59,15 +59,10 @@ int	print_xX(unsigned int num, int isUpper)
 	if (num >= 16)
 		cnt += print_xX(num / 16, isUpper);
 	if (isUpper)
-	{
-		cnt++;
 		ft_putchar_fd("0123456789ABCDEF"[num % 16], 1);
-	}
 	else
-	{
-		cnt++;
 		ft_putchar_fd("0123456789abcdef"[num % 16], 1);
-	}
+	cnt++;
 	return (cnt);
 }
 
