@@ -6,7 +6,7 @@
 #    By: mhong <mhong@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/07 01:08:25 by mhong            #+#    #+#              #
-#    Updated: 2022/02/07 01:08:25 by mhong           ###   ########.fr        #
+#    Updated: 2022/02/07 01:22:35 by mhong            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ NAME		= libftprintf.a
 LIBFT		= libft
 LIBFT_NAME	= libft.a
 
-SRCS		= ft_printf.c ft_printf_utils.c
+SRCS		= ft_printf.c ft_print_util.c
 OBJS		= $(SRCS:.c=.o)
 
 all: $(NAME)

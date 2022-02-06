@@ -6,7 +6,7 @@
 /*   By: mhong <mhong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 15:27:56 by mhong             #+#    #+#             */
-/*   Updated: 2022/02/06 21:22:24 by mhong            ###   ########.fr       */
+/*   Updated: 2022/02/07 01:17:49 by mhong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	check(const char *str, va_list argList)
 	else if (*str == 'u')
 		return (print_u(va_arg(argList, unsigned int)));
 	else if (*str == 'c')
-		ft_putchar_fd(va_arg(argList, char), 1);
+		ft_putchar_fd(va_arg(argList, int), 1);
 	else if (*str == '%')
 		ft_putchar_fd('%', 1);
 	return (1);

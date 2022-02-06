@@ -6,7 +6,7 @@
 /*   By: mhong <mhong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 16:50:02 by mhong             #+#    #+#             */
-/*   Updated: 2022/02/06 21:22:23 by mhong            ###   ########.fr       */
+/*   Updated: 2022/02/07 01:23:43 by mhong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	print_di(int nb)
 int	print_u(unsigned int num)
 {
 	int	cnt;
+
+	cnt = 0;
 	if (num == 0)
 		return (0);
 	if (num >= 10)
