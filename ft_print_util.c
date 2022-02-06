@@ -72,7 +72,7 @@ int	print_s(char *str)
 	cnt = 0;
 	if (str == 0)
 		return (print_s("(null)"));
-	while (*str != '0')
+	while (*str != '\0')
 	{
 		ft_putchar_fd(*str, 1);
 		cnt++;
