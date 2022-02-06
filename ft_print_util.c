@@ -42,8 +42,6 @@ int	print_u(unsigned int num)
 	int	cnt;
 
 	cnt = 0;
-	if (num == 0)
-		return (0);
 	if (num >= 10)
 		cnt += print_u(num / 10);
 	cnt++;
