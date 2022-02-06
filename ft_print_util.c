@@ -22,6 +22,7 @@ int	print_p(long long ptr)
 		temp = 0llu + ptr;
 	ft_putstr_fd("0x", 0);
 	cnt = 2;
+	cnt += print_xX(temp, 0);
 	return (cnt);
 }
 
@@ -35,7 +36,18 @@ int	print_di(int nb)
 	free(temp);
 	return (cnt);
 }
-int	print_u(unsigned int num);
+
+int	print_u(unsigned int num)
+{
+	int	cnt;
+	if (num == 0)
+		return (0);
+	if (num >= 10)
+		cnt += print_u(num / 10);
+	cnt++;
+	ft_putchar_fd("0123456789"[num % 10], 1);
+	return (cnt);
+}
 
 int	print_xX(unsigned int num, int isUpper)
 {
