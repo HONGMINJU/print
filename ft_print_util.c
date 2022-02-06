@@ -51,7 +51,7 @@ int	print_u(unsigned int num)
 	return (cnt);
 }
 
-int	print_xX(unsigned int num, int isUpper)
+int	print_xX(unsigned long long num, int isUpper)
 {
 	int	cnt;
 
