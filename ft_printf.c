@@ -48,7 +48,7 @@ int	ft_printf(const char *str, ...)
 			cnt++;
 		}
 		else
-			cnt += check(*str++, argList);
+			cnt += check(*++str, argList);
 		str++;
 	}
 	return (cnt);
